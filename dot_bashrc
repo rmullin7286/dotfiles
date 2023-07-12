@@ -15,6 +15,3 @@ PS1='[\u@\h \W]\$ '
 # search with up and down arrows
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
-
-# set default editor
-EDITOR=vim
