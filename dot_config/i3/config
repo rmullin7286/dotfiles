@@ -210,5 +210,5 @@ bindsym $mod+p exec --no-startup-id ~/.config/i3/picom_switch.sh
 # Allows floating for steam big picture mode
 for_window [instance="steam"] floating enable, resize set 1920 1080, move position 0 0
 
-# Custom built i3-auto-layout (https://github.com/rmullin7286/i3-auto-layout)
-exec --no-startup-id i3-auto-layout
+# Multi-screen screenshots with scrot
+bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # All screens
