@@ -8,8 +8,11 @@
 #  - ffmpegthumbnailer: Used by ranger to display thumbnail previews of
 #    videos
 #  - neovim: Default text editor, use instead of vim
-#
+#  - w3m: Used mainly for displaying images in the terminal in ranger
+#  - xdg-user-dirs: Used to create default user directories like Documents, Downloads, Pictures, etc.
 yay -S --needed \
 	ranger \
 	ffmpegthumbnailer \
-  neovim
+  neovim \
+  w3m \
+  xdg-user-dirs
