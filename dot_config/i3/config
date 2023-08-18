@@ -199,8 +199,8 @@ default_floating_border pixel 2
 
 # add gaps
 smart_gaps on
-gaps inner 10
-gaps outer 20
+gaps inner 5
+gaps outer 5
 
 # initialize picom for transparency. Also create a bind to disable/enable it if necessary
 # It can sometimes muck with game performance
