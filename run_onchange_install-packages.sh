@@ -15,6 +15,7 @@
 #  - light: Backlight control tool. This project is technically orphaned. If it ever breaks I'll just 
 #    write one myself, it's not that hard.
 #  - noto-fonts-emoji: emojis and icons required for rendering certain text in browsers and applications
+#  - lightdm-webkit2-theme-glorious: better theme for lightdm webkit2 greeter
 yay -S --needed \
 	ranger \
 	ffmpegthumbnailer \
@@ -24,4 +25,5 @@ yay -S --needed \
   feh \
   picom \
   light \
-  noto-fonts-emoji
+  noto-fonts-emoji \
+  lightdm-webkit2-theme-glorious
