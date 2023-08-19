@@ -12,6 +12,8 @@
 #  - xdg-user-dirs: Used to create default user directories like Documents, Downloads, Pictures, etc.
 #  - feh: Image viewing software, also used to change desktop background
 #  - picom: Compositor for i3wm
+#  - light: Backlight control tool. This project is technically orphaned. If it ever breaks I'll just 
+#    write one myself, it's not that hard.
 yay -S --needed \
 	ranger \
 	ffmpegthumbnailer \
@@ -19,4 +21,5 @@ yay -S --needed \
   w3m \
   xdg-user-dirs \
   feh \
-  picom
+  picom \
+  light
