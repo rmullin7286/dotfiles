@@ -14,6 +14,7 @@
 #  - picom: Compositor for i3wm
 #  - light: Backlight control tool. This project is technically orphaned. If it ever breaks I'll just 
 #    write one myself, it's not that hard.
+#  - noto-fonts-emoji: emojis and icons required for rendering certain text in browsers and applications
 yay -S --needed \
 	ranger \
 	ffmpegthumbnailer \
@@ -22,4 +23,5 @@ yay -S --needed \
   xdg-user-dirs \
   feh \
   picom \
-  light
+  light \
+  noto-fonts-emoji
