@@ -15,6 +15,7 @@
 #  - light: Backlight control tool. This project is technically orphaned. If it ever breaks I'll just 
 #    write one myself, it's not that hard.
 #  - noto-fonts: emojis and icons required for rendering certain text in browsers and applications
+#  - noto-fonts-cjk: Chinese, Japanese, and Korean fonts
 #  - lightdm-webkit2-theme-glorious: better theme for lightdm webkit2 greeter
 #  - arandr: A simple gui xrandr manager for changing display layout
 #  - autorandr: A daemon/tool to save configs for monitors and change based on monitor setup (Useful for laptop when 
@@ -29,6 +30,7 @@ yay -S --needed \
   picom \
   light \
   noto-fonts \
+  noto-fonts-cjk \
   lightdm-webkit2-theme-glorious \
   arandr \
   autorandr
