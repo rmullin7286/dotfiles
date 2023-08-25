@@ -20,6 +20,7 @@
 #  - arandr: A simple gui xrandr manager for changing display layout
 #  - autorandr: A daemon/tool to save configs for monitors and change based on monitor setup (Useful for laptop when 
 #    hotplugging HDMI so the second screen pops up and deletes automatically)
+#  - arc-gtk-theme: GTK theme I'm currently using.
 yay -S --needed \
 	ranger \
 	ffmpegthumbnailer \
@@ -33,4 +34,5 @@ yay -S --needed \
   noto-fonts-cjk \
   lightdm-webkit2-theme-glorious \
   arandr \
-  autorandr
+  autorandr \
+  arc-gtk-theme
