@@ -14,8 +14,11 @@
 #  - picom: Compositor for i3wm
 #  - light: Backlight control tool. This project is technically orphaned. If it ever breaks I'll just 
 #    write one myself, it's not that hard.
-#  - noto-fonts-emoji: emojis and icons required for rendering certain text in browsers and applications
+#  - noto-fonts: emojis and icons required for rendering certain text in browsers and applications
 #  - lightdm-webkit2-theme-glorious: better theme for lightdm webkit2 greeter
+#  - arandr: A simple gui xrandr manager for changing display layout
+#  - autorandr: A daemon/tool to save configs for monitors and change based on monitor setup (Useful for laptop when 
+#    hotplugging HDMI so the second screen pops up and deletes automatically)
 yay -S --needed \
 	ranger \
 	ffmpegthumbnailer \
@@ -25,5 +28,7 @@ yay -S --needed \
   feh \
   picom \
   light \
-  noto-fonts-emoji \
-  lightdm-webkit2-theme-glorious
+  noto-fonts \
+  lightdm-webkit2-theme-glorious \
+  arandr \
+  autorandr
