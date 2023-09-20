@@ -1,6 +1,9 @@
 -- leader key is space
 vim.g.mapleader = ' '
 
+-- colorscheme
+vim.cmd('colorscheme habamax')
+
 -- settings were recommended for nvim-tree
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -81,7 +84,12 @@ require('lazy').setup({
     'vim-airline/vim-airline',
     config = function()
       vim.g['airline#extensions#tabline#enabled'] = 1
-
+    end
+  },
+  {
+    'vim-airline/vim-airline-themes',
+    config = function()
+      vim.g.airline_theme = 'deus'
     end
   }
 })
