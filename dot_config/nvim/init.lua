@@ -70,11 +70,22 @@ require('lazy').setup({
     config = function()
       require('nvim-tree').setup()
     end
+  },
+  {
+    'vim-airline/vim-airline',
+    config = function()
+      vim.g['airline#extensions#tabline#enabled'] = 1
+
+    end
   }
 })
 
 -- bind for toggling nvim-tree
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<cr>')
+
+-- binds for cycling through buffers
+vim.keymap.set('n', '<Tab>', ':bnext<cr>')
+vim.keymap.set('n', '<S-Tab>', ':bprev<cr>')
 
 -- set tabs to 2 spaces
 vim.opt.tabstop = 2
