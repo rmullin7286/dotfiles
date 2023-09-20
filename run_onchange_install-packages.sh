@@ -39,6 +39,6 @@ yay -S --needed \
   lightdm-webkit2-theme-glorious \
   arandr \
   autorandr \
-  arc-gtk-theme
+  arc-gtk-theme \
   libnotify \
   notification-daemon
