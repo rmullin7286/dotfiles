@@ -17,13 +17,13 @@
 #  - noto-fonts: emojis and icons required for rendering certain text in browsers and applications
 #  - noto-fonts-cjk: Chinese, Japanese, and Korean fonts
 #  - ttf-hack-nerd: nerdfont for terminal, can display icons
-#  - lightdm-webkit2-theme-glorious: better theme for lightdm webkit2 greeter
 #  - arandr: A simple gui xrandr manager for changing display layout
 #  - autorandr: A daemon/tool to save configs for monitors and change based on monitor setup (Useful for laptop when 
 #    hotplugging HDMI so the second screen pops up and deletes automatically)
 #  - arc-gtk-theme: GTK theme I'm currently using.
 #  - libnotify: contains notify-send for sending desktop notifications
 #  - notification-daemon: notification server required for libnotify to work
+#  - ly: TUI login manager (lightdm kept breaking)
 yay -S --needed \
 	ranger \
 	ffmpegthumbnailer \
@@ -36,9 +36,12 @@ yay -S --needed \
   noto-fonts \
   noto-fonts-cjk \
   ttf-hack-nerd \
-  lightdm-webkit2-theme-glorious \
   arandr \
   autorandr \
   arc-gtk-theme \
   libnotify \
-  notification-daemon
+  notification-daemon \
+  ly
+
+# setup ly
+systemctl enable ly
