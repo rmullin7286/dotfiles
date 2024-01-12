@@ -24,6 +24,7 @@
 #  - libnotify: contains notify-send for sending desktop notifications
 #  - notification-daemon: notification server required for libnotify to work
 #  - ly: TUI login manager (lightdm kept breaking)
+#  - xidlehook: Manages events when system is idle. Used for automatic locking and sleeping
 yay -S --needed \
 	ranger \
 	ffmpegthumbnailer \
@@ -41,7 +42,8 @@ yay -S --needed \
   arc-gtk-theme \
   libnotify \
   notification-daemon \
-  ly
+  ly \
+  xidlehook
 
 # setup ly
 systemctl enable ly
