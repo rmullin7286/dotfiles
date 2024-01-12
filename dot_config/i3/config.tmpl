@@ -129,6 +129,25 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+{{ if eq .chezmoi.hostname "ryan-arch"}}
+# For desktop, I'm currently running two side by side monitors
+# I assign workspaces 1-5 to monitor 1 and 6-10 to monitor 2
+set $monitor_left "DP-0"
+set $monitor_right "DP-2"
+
+workspace $ws1 output $monitor_left
+workspace $ws2 output $monitor_left
+workspace $ws3 output $monitor_left
+workspace $ws4 output $monitor_left
+workspace $ws5 output $monitor_left
+workspace $ws6 output $monitor_right
+workspace $ws7 output $monitor_right
+workspace $ws8 output $monitor_right
+workspace $ws9 output $monitor_right
+workspace $ws10 output $monitor_right
+{{ end }}
+
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -194,7 +213,10 @@ bar {
 }
 
 # restore desktop background when restarting
-exec --no-startup-id ~/.fehbg &
+exec --no-startup-id ~/.fehbg
+
+# Also restore desktop placement
+exec --no-startup-id autorandr --change
 
 # window borders
 smart_borders on
@@ -210,8 +232,8 @@ gaps inner 10
 exec_always --no-startup-id picom -b --backend glx
 bindsym $mod+p exec --no-startup-id ~/.config/i3/picom_switch.sh 
 
-# Allows floating for steam big picture mode
-for_window [instance="steam"] floating enable, resize set 1920 1080, move position 0 0
+# Set xidlehook to handle locking and hibernating when idle
+exec_always --no-startup-id ~/.config/i3/idle-lock-sleep.sh &
 
 # Multi-screen screenshots with scrot
 bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # All screens
