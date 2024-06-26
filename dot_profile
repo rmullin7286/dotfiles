@@ -4,3 +4,5 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export TERMINAL=alacritty
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export EDITOR="nvim"
+
+[ -f "/home/ryan/.ghcup/env" ] && . "/home/ryan/.ghcup/env" # ghcup-env

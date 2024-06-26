@@ -10,6 +10,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ll='ls -lah'
 alias cfg='chezmoi edit --apply'
+alias background="feh --bg-scale"
 
 PS1='[\u@\h \W]\$ '
 
@@ -22,3 +23,5 @@ bind '"\e[B": history-search-forward'
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+[ -f "/home/ryan/.ghcup/env" ] && . "/home/ryan/.ghcup/env" # ghcup-env

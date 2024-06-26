@@ -15,11 +15,11 @@ crtc 0
 mode 2560x1440
 pos 0x0
 primary
-rate 59.95
+rate 143.91
 x-prop-non_desktop 0
 output DP-2
 crtc 1
 mode 2560x1440
 pos 2560x0
-rate 59.95
+rate 143.91
 x-prop-non_desktop 0
