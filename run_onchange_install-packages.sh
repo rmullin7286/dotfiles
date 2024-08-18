@@ -33,7 +33,6 @@ yay -S --needed \
   xdg-user-dirs \
   feh \
   picom \
-  light \
   noto-fonts \
   noto-fonts-cjk \
   ttf-hack-nerd \
@@ -43,7 +42,8 @@ yay -S --needed \
   libnotify \
   notification-daemon \
   ly \
-  xidlehook
+  xidlehook \
+  bluetuith
 
 # setup ly
 systemctl enable ly
