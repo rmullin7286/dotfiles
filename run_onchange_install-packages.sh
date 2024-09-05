@@ -46,7 +46,8 @@ yay -S --needed \
   bluetuith \
   hyprland \
   waybar \
-  rofi-wayland
+  rofi-wayland \
+  hyprpaper
 
 # setup ly
 systemctl enable ly
