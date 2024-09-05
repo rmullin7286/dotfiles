@@ -43,7 +43,10 @@ yay -S --needed \
   notification-daemon \
   ly \
   xidlehook \
-  bluetuith
+  bluetuith \
+  hyprland \
+  waybar \
+  rofi-wayland
 
 # setup ly
 systemctl enable ly
