@@ -19,7 +19,9 @@ PS1='[\u@\h \W]\$ '
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
-
+# Set simultaneous shells to append to history instead of overwriting
+shopt -s histappend
+export HISTSIZE=100000
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
