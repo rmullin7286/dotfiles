@@ -47,7 +47,9 @@ yay -S --needed \
   hyprland \
   waybar \
   rofi-wayland \
-  hyprpaper
+  hyprpaper \
+  hyprlock \
+  hypridle
 
 # setup ly
 systemctl enable ly
