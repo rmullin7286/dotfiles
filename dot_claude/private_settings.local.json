@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(systemctl list-unit-files:*)",
+      "WebFetch(domain:wiki.hypr.land)",
+      "Bash(dmesg:*)",
+      "Bash(sudo dmesg:*)",
+      "Bash(sudo modprobe:*)"
+    ]
+  }
+}
