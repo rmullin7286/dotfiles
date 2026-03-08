@@ -13,6 +13,7 @@ alias cfg='chezmoi edit --apply'
 alias background="feh --bg-scale"
 alias bluetooth="bluetuith"
 alias myip="ip addr show"
+alias clauded="claude --dangerously-skip-permissions"
 
 PS1='[\u@\h \W]\$ '
 

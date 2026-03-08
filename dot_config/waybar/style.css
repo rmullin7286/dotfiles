@@ -1,7 +1,7 @@
 @import "catppuccin-mocha.css";
 
 * {
-  font-family: FantasqueSansMono Nerd Font;
+  font-family: "FantasqueSansMono Nerd Font", "FontAwesome";
   font-size: 17px;
   min-height: 0;
 }
