@@ -12,6 +12,7 @@ alias ll='ls -lah'
 alias cfg='chezmoi edit --apply'
 alias background="feh --bg-scale"
 alias bluetooth="bluetuith"
+alias myip="ip addr show"
 
 PS1='[\u@\h \W]\$ '
 
