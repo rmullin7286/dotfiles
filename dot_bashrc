@@ -15,7 +15,8 @@ alias bluetooth="bluetuith"
 alias myip="ip addr show"
 alias clauded="claude --dangerously-skip-permissions"
 
-PS1='[\u@\h \W]\$ '
+# Initialize Starship prompt
+eval "$(starship init bash)"
 
 # search with up and down arrows
 bind '"\e[A": history-search-backward'
